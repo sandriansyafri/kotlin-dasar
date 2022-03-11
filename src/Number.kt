@@ -11,14 +11,44 @@ fun main(){
 
       // Float Point Number
       var typeFloat: Float = 30.02F
-      var typeDouble: Double = 3.02;
+      var typeDouble: Double = 3.02
+      
+      // Literals
+      var typeDecimalLiteral:Int = 3000
+      var typeHexLiteral = 0xaaafff
+      var typeBinaryLiteral = 0b0001001
+
+      // Conversion variable_name.to[conversionType]
+      /*
+            example 
+            var number:Int  = 9_000_000
+            number.toShort
+            number.toByte
+            ....
+
+            note : ketika melakukan konversi perlu diperhatikan overflow konversion
+            contoh : 9_000_000 konversi ke Short 
+                  ini akan mengalami overflow konversion 
+
+       */ 
+      
 
       println(typeByte)
       println(typeShort)
       println(typeInt)
       println(typeLong)
-
+      println("-----------------")
+      
       println(typeFloat)
       println(typeDouble)
+      println("-----------------")
+      
+      println(typeDecimalLiteral)
+      println(typeHexLiteral)
+      println(typeBinaryLiteral)
+      println("-----------------")
+
+      
+
 
 }
